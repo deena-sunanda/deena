@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>E-Learning Platform</h1>
+        <nav>
+            <ul>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#content">Content</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="courses">
+            <h2>Available Courses</h2>
+            <div class="course" onclick="viewCourse('Course 1', 'This is an overview of Course 1.')">
+                <h3>Course 1</h3>
+                <p>Introduction to Course 1</p>
+            </div>
+            <div class="course" onclick="viewCourse('Course 2', 'This is an overview of Course 2.')">
+                <h3>Course 2</h3>
+                <p>Introduction to Course 2</p>
+            </div>
+            <div class="course" onclick="viewCourse('Course 3', 'This is an overview of Course 3.')">
+                <h3>Course 3</h3>
+                <p>Introduction to Course 3</p>
+            </div>
+        </section>
+
+        <section id="video">
+            <h2>Featured Video</h2>
+            <video id="featured-video" controls>
+                <source src="sample.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section id="content">
+            <h2>Course Content</h2>
+            <div id="content-display">
+                <p>Select a course to view its content.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 E-Learning Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
